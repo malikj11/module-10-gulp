@@ -1,0 +1,176 @@
+/* General Styling */
+body {
+  background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+/* Make Images Flexible */
+img {
+  max-width: 100%;
+}
+
+/* Link Styling */
+a {
+  color: #59331d;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  border-bottom: 10px solid #d98555;
+}
+
+/* Navbar Styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: #d98555;
+}
+
+/* Logo Image in Navbar */
+nav .logo img {
+  max-width: 150px;
+}
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+/* Main Background */
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+
+/* Main Content Area */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+article {
+  flex-basis: 73%;
+}
+figure {
+  margin: 3rem 0 0 0;
+  flex-basis: 25%;
+  background-color: #59331d;
+  border-radius: 10px;
+}
+figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+figcaption {
+  color: #f2f2f2;
+  padding: 0.5rem;
+}
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+
+/* Footer Styling */
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  border-top: 10px solid #d98555;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+
+/* Responsive Adjustments */
+
+/* For screens smaller than 768px (Tablets and smaller devices) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+  
+  /* Reduce margin and font size in nav items */
+  nav li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  /* Stack main content vertically */
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Make article and figure full width */
+  article, figure {
+    flex-basis: 100%;
+    margin: 0;
+  }
+
+  /* Adjust button size */
+  .button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Footer links stack vertically */
+  footer ul {
+    flex-direction: column;
+  }
+}
